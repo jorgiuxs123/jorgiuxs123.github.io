@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Carrera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:#B5F8FE;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .filter {
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Resultados de Carrera</h1>
+</header>
+
+<div class="filter">
+    <label for="ageRange">Filtrar por Rango de Edad: </label>
+    <select id="ageRange">
+        <option value="">Todos</option>
+        <option value="16-19M">16-19M</option>
+        <option value="20-24M">20-24M</option>
+        <option value="25-29M">25-29M</option>
+        <option value="30-34M">30-34M</option>
+        <option value="35-39M">35-39M</option>
+        <option value="40-44M">40-44M</option>
+        <option value="45-49M">45-49M</option>
+        <option value="50-54M">50-54M</option>
+        <option value="55-59M">55-59M</option>
+        <option value="60-64M">60-64M</option>
+        <option value="65-69M">65-69M</option>
+        <option value="70 Y +M">70 Y +M</option>
+        <option value="16-19F">16-19F</option>
+        <option value="20-24F">20-24F</option>
+        <option value="25-29F">25-29F</option>
+        <option value="30-34F">30-34F</option>
+        <option value="35-39F">35-39F</option>
+        <option value="40-44F">40-44F</option>
+        <option value="45-49F">45-49F</option>
+        <option value="50-54F">50-54F</option>
+        <option value="55-59F">55-59F</option>
+        <option value="60-64F">60-64F</option>
+        <option value="65-69F">65-69F</option>
+        <option value="70 Y +F">70 Y +F</option>
+    </select>
+</div>
+
+<table id="resultsTable">
+    <thead>
+        <tr>
+            <th>Posición</th>
+            <th>Nro. Corredor</th>
+            <th>Nombre</th>
+            <th>Tiempo</th>
+            <th>Sexo</th>
+            <th>Rango Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>202</td>
+            <td>LUIS ALBERTO BENITEZ CRISTALDO</td>
+            <td>0:00:29</td>
+            <td>M</td>
+            <td>30-34M</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>201</td>
+            <td>CARLOS EDUARDO GARCETE NUÑEZ</td>
+            <td>0:01:36</td>
+            <td>M</td>
+            <td>25-29M</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>203</td>
+            <td>MANUEL FABRICCIO FERNANDEZ CORONEL</td>
+            <td>0:01:58</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>204</td>
+            <td>OSCAR MOISES FARIÑA BOGADO</td>
+            <td>0:02:21</td>
+            <td>M</td>
+            <td>16-19M</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>205</td>
+            <td>JORGE FRANCISCO ALARCON CRISTALDO</td>
+            <td>0:02:28</td>
+            <td>M</td>
+            <td>30-34M</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>1</td>
+            <td>OSMAR ALARCON</td>
+            <td>0:02:33</td>
+            <td>M</td>
+            <td>30-34M</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>2</td>
+            <td>JORGE ALARCON</td>
+            <td>0:02:33</td>
+            <td>M</td>
+            <td>30-34M</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>3</td>
+            <td>MIGUEL ALARCON</td>
+            <td>0:02:34</td>
+            <td>M</td>
+            <td>35-39M</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>4</td>
+            <td>JUAN PABLO ALARCON</td>
+            <td>0:02:35</td>
+            <td>M</td>
+            <td>35-39M</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>5</td>
+            <td>CARLOS NUÑEZ</td>
+            <td>0:02:36</td>
+            <td>M</td>
+            <td>25-29M</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>6</td>
+            <td>JORGE GARCETE</td>
+            <td>0:02:36</td>
+            <td>M</td>
+            <td>30-34M</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>7</td>
+            <td>AMADO JULIAN ABAD CLIVIO</td>
+            <td>0:02:36</td>
+            <td>M</td>
+            <td>70 Y +M</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>8</td>
+            <td>EDWAR DE JESUS ABAD FERNANDEZ</td>
+            <td>0:02:37</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>9</td>
+            <td>JENNIFER PATRICIA ABAD FERNANDEZ</td>
+            <td>0:02:37</td>
+            <td>F</td>
+            <td>25-29F</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>10</td>
+            <td>YAMILI LUJAN ABAD FERNANDEZ</td>
+            <td>0:02:39</td>
+            <td>F</td>
+            <td>16-19F</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>11</td>
+            <td>ANGEL GABRIEL ABAD MARTINEZ</td>
+            <td>0:02:40</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>12</td>
+            <td>ARNALDO ABRAHAN ABAD MARTINEZ</td>
+            <td>0:02:41</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>13</td>
+            <td>JUNIOR ANDRES ABAD MARTINEZ</td>
+            <td>0:02:43</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>14</td>
+            <td>MARIBELLA MAGALI ABAD MARTINEZ</td>
+            <td>0:02:43</td>
+            <td>F</td>
+            <td>20-24F</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>15</td>
+            <td>ARNALDO ANDRES ABAD ROLON</td>
+            <td>0:02:45</td>
+            <td>M</td>
+            <td>40-44M</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>16</td>
+            <td>EMILIO ABAD ROLON</td>
+            <td>0:02:46</td>
+            <td>M</td>
+            <td>40-44M</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>17</td>
+            <td>JULIAN ABAD ROLON</td>
+            <td>0:02:48</td>
+            <td>M</td>
+            <td>40-44M</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>18</td>
+            <td>JULIO CESAR ABAD ROLON</td>
+            <td>0:02:49</td>
+            <td>M</td>
+            <td>50-54M</td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>19</td>
+            <td>RAMONA JUSTINA ABAD ROLON</td>
+            <td>0:02:55</td>
+            <td>F</td>
+            <td>35-39F</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>20</td>
+            <td>SANY YOLANDA ABAD ROLON</td>
+            <td>0:02:57</td>
+            <td>F</td>
+            <td>25-29F</td>
+        </tr>
+        <tr>
+            <td>26</td>
+            <td>21</td>
+            <td>ESMILSE LUCIA ABAT ROLON</td>
+            <td>0:02:58</td>
+            <td>F</td>
+            <td>45-49F</td>
+        </tr>
+        <tr>
+            <td>27</td>
+            <td>22</td>
+            <td>LIBERATA MARGARITA ABAT ROLON</td>
+            <td>0:02:59</td>
+            <td>F</td>
+            <td>45-49F</td>
+        </tr>
+        <tr>
+            <td>28</td>
+            <td>23</td>
+            <td>ALICE INOCENCIA ACEVAL</td>
+            <td>0:03:00</td>
+            <td>F</td>
+            <td>45-49F</td>
+        </tr>
+        <tr>
+            <td>29</td>
+            <td>24</td>
+            <td>CASTO ADRIAN ACEVAL GONZALEZ</td>
+            <td>0:03:02</td>
+            <td>M</td>
+            <td>20-24M</td>
+        </tr>
+        <tr>
+            <td>30</td>
+            <td>25</td>
+            <td>AURORA ELENA ACEVEDO</td>
+            <td>0:03:03</td>
+            <td>F</td>
+            <td>40-44F</td>
+        </tr>
+        <!-- Registros 31 a 105 -->
+        <!-- Aquí se insertarán todos los registros faltantes siguiendo el mismo formato -->
+    </tbody>
+</table>
+
+<script>
+    document.getElementById('ageRange').addEventListener('change', function() {
+        const selectedRange = this.value;
+        const rows = document.querySelectorAll('#resultsTable tbody tr');
+
+        rows.forEach(row => {
+            const ageRangeCell = row.cells[5].textContent;
+            if (selectedRange === "" || ageRangeCell.includes(selectedRange)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
